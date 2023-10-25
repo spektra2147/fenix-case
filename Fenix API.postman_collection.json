@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "6a18fa1b-8498-42c0-9618-7ad751e6e6ff",
+		"name": "Fenix API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4871431"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"deviceToken\": \"8096-70085-0610-BX-7108\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/device/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"device",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"deviceToken\": \"8096-70085-0610-BX-7108\",\n    \"productId\": \"2\",\n    \"receiptToken\": \"AXW345STYUJ56B8JKS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/device/subscribe",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"device",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}
